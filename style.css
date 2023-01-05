@@ -1,0 +1,86 @@
+body{
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+    background: linear-gradient(135deg, #5236FF, #D9EDFF);
+}
+
+#paper::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-color: rgba(255,0,0,0.6);
+}
+
+#paper {
+    width: 30%;
+    height: 80vh;
+    position: relative;
+    margin: 50px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: 10px 10px 24px 0 black;
+} 
+  
+#pattern {
+    height: 100%;
+    background-image: repeating-linear-gradient(white 0px, white 24px, blue 25px);
+}
+
+#content {
+    padding-top: 6px;
+    padding-left: 56px;
+    padding-right: 16px;
+    line-height: 9px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+i{
+    color: red;
+}
+
+.cart{
+    margin-left: -50px;
+}
+
+input{
+    outline: 0;
+} 
+
+@media only screen and (max-width: 1400px) { 
+    #paper{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1200px) { 
+    #paper{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 992px) { 
+    #paper{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    #paper{
+        width: 70%;
+    }
+    #content{
+        line-height: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) { 
+    #paper{
+        width: 80%;
+    }
+}
